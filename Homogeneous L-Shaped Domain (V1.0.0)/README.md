@@ -97,9 +97,16 @@ The implementation produces:
 - This repository represents the **first version** of the code for the homogeneous L-shaped domain case.
 - The implementation is intended for research and reproducibility purposes.
 
-## Related Paper
+## 📄 Related Paper
 
-This repository is associated with the following paper:
+The scientific foundations of this work are presented in:
+
+> **Dodge, S.; Nicora, M.; Barmada, S.; Brignone, M.; Procopio, R.; Tucci, M.**  
+> *“A deep learning based lightning location system.”*  
+> Electric Power Systems Research, 2025, https://doi.org/10.1016/j.epsr.2025.111437.  
+> [Read the article](https://www.sciencedirect.com/science/article/pii/S0378779625000306)
+
+📌 This repository implements, reproduces, and extends the methodology described in the above peer-reviewed publication. If you use this code, dataset, or results in your research, please cite the original article.
 
 ## 📚 Citation
 
