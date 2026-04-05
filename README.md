@@ -3,7 +3,7 @@
 [![Project Website](https://img.shields.io/badge/website-BEM_PINN-blue)](https://shayandodge.github.io/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
-This repository contains implementations of a coupled **Boundary Element Method (BEM)** and **Physics-Informed Neural Network (PINN)** framework for solving the **Laplace equation** on L-shaped domains.
+This repository contains implementations of a coupled **Boundary Element Method (BEM)** and **Physics-Informed Neural Network (PINN)** framework for solving the **Laplace equation**.
 
 The project is organized into versioned implementations, progressing from a baseline model to more advanced physical configurations.
 
