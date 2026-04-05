@@ -90,15 +90,10 @@ The implementation produces:
 
 - This repository represents the **first version** of the code for the homogeneous L-shaped domain case.
 - The implementation is intended for research and reproducibility purposes.
-- File organization and modularization may be improved in future versions.
 
 ## Related Paper
 
 This repository is associated with the following paper:
-
-**Solving Laplace Equations with a Combined BEM and PINN Approach**
-
-Please add the full citation here.
 
 ## 📚 Citation
 
