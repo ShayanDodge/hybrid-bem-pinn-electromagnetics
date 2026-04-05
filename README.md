@@ -34,7 +34,7 @@ The project is organized into versioned implementations, progressing from a base
 
 <img src="https://github.com/user-attachments/assets/0f59587c-7119-4b7e-a790-7432307fa024" width="100%"/>
 
-<sub>PINN–BEM coupling on L-shaped domain</sub>
+<sub>BEM-PINN coupling on L-shaped domain</sub>
 
 </td>
 </tr>
@@ -62,20 +62,6 @@ The project is organized into versioned implementations, progressing from a base
 </tr>
 
 </table>
----
-
-## 🧠 Method Overview
-
-The general workflow across versions:
-
-1. Construct the L-shaped computational domain  
-2. Define Dirichlet and Neumann boundary conditions  
-3. Train a PINN on one subdomain  
-4. Use PINN predictions at the interface  
-5. Solve the complementary subdomain using BEM  
-6. Reconstruct the global solution  
-
----
 
 ## 🛠 Requirements
 
@@ -83,20 +69,6 @@ The general workflow across versions:
 - Deep Learning Toolbox  
 - Optimization Toolbox  
 - Parallel Computing Toolbox  
-
----
-
-## 🚀 Getting Started
-
-1. Open MATLAB  
-2. Navigate to a version folder (e.g., `V1.0.0`)  
-3. Run the main script inside the `main/` directory  
-
-Example command:
-
-run_bem_pinn_laplace_lshape
-
----
 
 ## 📊 Output
 
@@ -107,12 +79,8 @@ Each version produces:
 - BEM reconstruction  
 - Combined contour visualization  
 
----
-
 ## 📄 Related Paper
 
-
----
 
 ## 📚 Citation
 
