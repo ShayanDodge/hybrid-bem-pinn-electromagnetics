@@ -83,7 +83,7 @@ This code requires:
    - save output files such as `data.mat` and `data_bem.mat`
    - plot the combined contour field
 
-## Output
+## 📊 Output
 
 The implementation produces:
 
