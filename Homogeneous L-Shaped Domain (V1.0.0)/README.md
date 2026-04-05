@@ -1,4 +1,3 @@
-
 # Homogeneous L-Shaped Domain: Combined BEM-PINN Solver for Laplace Equation
 
 This repository contains the first implementation of a coupled **Boundary Element Method (BEM)** and **Physics-Informed Neural Network (PINN)** framework for solving the **Laplace equation** on a **homogeneous L-shaped domain**.
@@ -7,8 +6,8 @@ This repository contains the first implementation of a coupled **Boundary Elemen
 
 The computational domain is divided into two subdomains:
 
-- **Left subdomain:** solved using a PINN
-- **Right-bottom subdomain:** solved using BEM
+- **Left subdomain:** solved using a PINN  
+- **Right-bottom subdomain:** solved using BEM  
 
 The two parts are coupled through interface and boundary information to reconstruct the full solution over the L-shaped domain.
 
@@ -16,62 +15,47 @@ The two parts are coupled through interface and boundary information to reconstr
 
 This code performs the following steps:
 
-1. Constructs a 2D L-shaped domain from a rectangular point grid
-2. Extracts Dirichlet, Neumann, and interface boundary points
-3. Trains a PINN model on one subdomain
-4. Uses the PINN-predicted interface information as input to the BEM solver
-5. Solves the complementary subdomain with BEM
-6. Reconstructs and visualizes the combined scalar field
+1. Constructs a 2D L-shaped domain from a rectangular grid  
+2. Extracts Dirichlet, Neumann, and interface boundary points  
+3. Trains a PINN model on one subdomain  
+4. Uses PINN-predicted interface data as input to the BEM solver  
+5. Solves the complementary subdomain using BEM  
+6. Reconstructs and visualizes the combined scalar field  
 
-## Repository Contents
-
-- `BEM_PINN_Laplace_LD.mlx` — main live script
-- `model.mlx` — neural network model definition
-- `modelLoss.mlx` — loss computation
-- `objectiveFunction.mlx` — optimization objective
-- `bemforpinn_func_opt.m` — BEM-PINN coupling-related function
-- `coordin.m` — boundary node generation for BEM
-- `intfundamsquare.m` — fundamental solution integration
-- `intfundamsquare_post.m` — post-processing fundamental integration
-- `intnormalsquare.m` — normal derivative integration
-- `intnormalsquare_post.m` — post-processing normal derivative integration
-- `normalder.m` — normal derivative utility
-- `initializeHe.mlx` — He initialization
-- `initializeZeros.mlx` — zero initialization
-- `parameterStructToVector.mlx` — parameter structure to vector conversion
-- `parameterVectorToStruct.mlx` — parameter vector to structure conversion
+## Repository Structure
 
     homogeneous-l-shaped-domain-bem-pinn/
-        ├── README.md
-        ├── LICENSE
-        ├── .gitignore
-        ├── main/
-        │   └── run_bem_pinn_laplace.m
-        ├── src/
-        │   ├── model.mlx
-        │   ├── modelLoss.mlx
-        │   ├── objectiveFunction.mlx
-        │   ├── bemforpinn_func_opt.m
-        │   ├── coordin.m
-        │   ├── intfundamsquare.m
-        │   ├── intfundamsquare_post.m
-        │   ├── intnormalsquare.m
-        │   ├── intnormalsquare_post.m
-        │   ├── normalder.m
-        │   ├── initializeHe.mlx
-        │   ├── initializeZeros.mlx
-        │   ├── parameterStructToVector.mlx
-        │   └── parameterVectorToStruct.mlx
-        ├── results/
-        │   ├── data.mat
-        │   └── data_bem.mat
-        ├── figures/
-        │   └── domain_and_boundary_conditions.png
-        ├── docs/
-        │   └── notes.md
-        └── examples/
-            └── basic_run.md
-  
+    ├── README.md
+    ├── LICENSE
+    ├── .gitignore
+    ├── main/
+    │   └── run_bem_pinn_laplace_lshape.m
+    ├── src/
+    │   ├── model.mlx
+    │   ├── modelLoss.mlx
+    │   ├── objectiveFunction.mlx
+    │   ├── bemforpinn_func_opt.m
+    │   ├── coordin.m
+    │   ├── intfundamsquare.m
+    │   ├── intfundamsquare_post.m
+    │   ├── intnormalsquare.m
+    │   ├── intnormalsquare_post.m
+    │   ├── normalder.m
+    │   ├── initializeHe.mlx
+    │   ├── initializeZeros.mlx
+    │   ├── parameterStructToVector.mlx
+    │   └── parameterVectorToStruct.mlx
+    ├── results/
+    │   ├── data.mat
+    │   └── data_bem.mat
+    ├── figures/
+    │   └── domain_and_boundary_conditions.png
+    ├── docs/
+    │   └── notes.md
+    └── examples/
+        └── basic_run.md
+
+
 ## Requirements
 
 This code requires:
