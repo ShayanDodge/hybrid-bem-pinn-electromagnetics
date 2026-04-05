@@ -1,8 +1,13 @@
-# Homogeneous L-Shaped Domain: Combined BEM-PINN Solver for Laplace Equation
+# Homogeneous L-Shaped Domain: 
 
-This repository contains the first implementation of a coupled **Boundary Element Method (BEM)** and **Physics-Informed Neural Network (PINN)** framework for solving the **Laplace equation** on a **homogeneous L-shaped domain**.
+This version contains the first implementation of a coupled **Boundary Element Method (BEM)** and **Physics-Informed Neural Network (PINN)** framework for solving the **Laplace equation** on a **homogeneous L-shaped domain**.
 
 ## Overview
+<table>
+  <tr>
+    <td valign="top" width="60%">
+
+### Domain decomposition
 
 The computational domain is divided into two subdomains:
 
@@ -10,6 +15,13 @@ The computational domain is divided into two subdomains:
 - **Right-bottom subdomain:** solved using BEM  
 
 The two parts are coupled through interface and boundary information to reconstruct the full solution over the L-shaped domain.
+
+</td>
+    <td valign="top" width="40%" align="center">
+      <img src="https://github.com/user-attachments/assets/ed3e7a41-335a-4161-a946-79d129138d8a" alt="L-shaped domain decomposition" width="320">
+    </td>
+  </tr>
+</table>
 
 ## Main Idea
 
@@ -45,15 +57,9 @@ This code performs the following steps:
     │   ├── initializeZeros.mlx
     │   ├── parameterStructToVector.mlx
     │   └── parameterVectorToStruct.mlx
-    ├── results/
-    │   ├── data.mat
-    │   └── data_bem.mat
-    ├── figures/
-    │   └── domain_and_boundary_conditions.png
-    ├── docs/
-    │   └── notes.md
-    └── examples/
-        └── basic_run.md
+    └── results/
+        ├── data.mat
+        └── data_bem.mat
 
 
 ## Requirements
