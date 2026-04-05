@@ -8,7 +8,11 @@ The project is organized into versioned implementations, progressing from a base
 
 ## 📌 Versions
 
-### 🔹 v1.0.0 — Homogeneous L-Shaped Domain
+<table>
+<tr>
+<td width="55%" valign="top">
+
+### 🔹 v1.0.0 — Homogeneous L-Shaped Domain  
 **Folder:** `Homogeneous L-Shaped Domain (V1.0.0)`
 
 - Baseline implementation of the BEM-PINN framework  
@@ -20,7 +24,16 @@ The project is organized into versioned implementations, progressing from a base
 
 👉 This version establishes the core methodology and validates the approach.
 
----
+</td>
+
+<td width="45%" align="center">
+<img src="https://github.com/user-attachments/assets/0f59587c-7119-4b7e-a790-7432307fa024" width="100%"/>
+
+<sub>PINN–BEM coupling on L-shaped domain</sub>
+</td>
+</tr>
+</table>
+
 
 ### 🔹 v1.1.0 — Non-Homogeneous L-Shaped Domain *(Coming Soon)*
 - Extension to non-homogeneous / multi-material domains  
