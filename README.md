@@ -111,12 +111,6 @@ Each version produces:
 
 ## 📄 Related Paper
 
-**Solving Laplace Equations with a Combined BEM and PINN Approach**
-
-(Add full IEEE citation here)
-
----
-
 
 ---
 
