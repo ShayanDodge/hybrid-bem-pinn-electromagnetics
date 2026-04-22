@@ -1,6 +1,8 @@
-title: "BEM-PINN for Electromagnetics"
+title: "A Novel Hybrid Boundary Element—Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics"
 authors:
   - family-names: Barmada
+    given-names: Sami
   - family-names: Dodge
+    given-names: Shayan
 year: 2024
 doi: 10.1109/ACCESS.2024.3500039
