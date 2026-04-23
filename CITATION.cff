@@ -1,5 +1,9 @@
-title: "A Novel Hybrid Boundary Element – Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics"
-message: "If you use this code, please cite our paper."
+cff-version: 1.2.0
+
+title: "A Novel Hybrid Boundary Element—Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics"
+
+message: "If you use this code, please cite the associated paper."
+
 type: software
 
 authors:
@@ -7,10 +11,30 @@ authors:
     given-names: Sami
   - family-names: Dodge
     given-names: Shayan
+  - family-names: Tucci
+    given-names: Mauro
+  - family-names: Formisano
+    given-names: Alessandro
+  - family-names: Di Barba
+    given-names: Paolo
+  - family-names: Mognaschi
+    given-names: Maria Evelina
 
 year: 2024
-doi: 10.1109/ACCESS.2024.3500039
+
+doi: "10.1109/ACCESS.2024.3500039"
 
 journal: "IEEE Access"
 
-url: https://ieeexplore.ieee.org/abstract/document/10755077
+url: "https://ieeexplore.ieee.org/document/10755077"
+
+repository-code: "https://github.com/ShayanDodge/Hybrid-BEM-PINN-Electromagnetics"
+
+keywords:
+  - Boundary Element Method
+  - Physics-Informed Neural Networks
+  - BEM
+  - PINN
+  - Electromagnetics
+  - Laplace Equation
+  - Scientific Machine Learning
