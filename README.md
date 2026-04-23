@@ -1,18 +1,43 @@
-# A Novel Hybrid Boundary Element – Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics
+# A Novel Hybrid Boundary Element—Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics
 
 [![Project Website](https://img.shields.io/badge/website-BEM_PINN-blue)](https://shayandodge.github.io/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
-This repository contains implementations of a coupled **Boundary Element Method (BEM)** and **Physics-Informed Neural Network (PINN)** framework for solving the **Laplace equation**.
+---
 
-The scientific foundations of this work are presented in:
+## 🔗 Official Implementation
 
-> **Barmada, S., Dodge, S., Tucci, M., Formisano, A., Di Barba, P., & Mognaschi, M. E.**  
-> *“A Novel Hybrid Boundary Element—Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics.”*  
-> IEEE Access, 2024, [10.1109/ACCESS.2024.3500039](https://ieeexplore.ieee.org/document/10755077).  
-> [Read the article](https://ieeexplore.ieee.org/document/10755077)
+This repository is the **official implementation** of the paper:
 
-This repository implements, reproduces, and extends the methodology described in the above peer-reviewed publication. If you use this code, dataset, or results in your research, please cite the original article.
+> **“A Novel Hybrid Boundary Element—Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics”**  
+> Published in IEEE Access, 2024  
+> https://ieeexplore.ieee.org/document/10755077  
+
+It provides a hybrid computational framework that combines the **Boundary Element Method (BEM)** and **Physics-Informed Neural Networks (PINNs)** for solving electromagnetic problems governed by the **Laplace equation**.
+
+The repository reproduces and extends the methodology proposed in the paper, including domain decomposition and coupling via interface boundary conditions.
+
+---
+
+## 🧠 Overview
+
+This work introduces a **hybrid BEM–PINN approach** for numerical solutions in electromagnetics:
+
+- **PINN** is used to solve the PDE in part of the domain  
+- **BEM** is applied to the remaining subdomain  
+- The two methods are **coupled through interface conditions**  
+
+This approach leverages:
+- the flexibility of neural networks  
+- the efficiency of boundary-based numerical methods  
+
+to solve partial differential equations in complex domains.
+
+---
+
+## 🔑 Keywords
+
+Boundary Element Method (BEM), Physics-Informed Neural Networks (PINNs), Electromagnetics, Laplace Equation, Scientific Machine Learning, Domain Decomposition
 
 ---
 
@@ -26,14 +51,14 @@ This repository implements, reproduces, and extends the methodology described in
 ### 🔹 v1.0.0 — Homogeneous L-Shaped Domain  
 **Folder:** `Homogeneous L-Shaped Domain (V1.0.0)`
 
-- Baseline implementation of the BEM-PINN framework  
+- Baseline implementation of the hybrid BEM–PINN framework  
 - Solves the Laplace equation on a homogeneous L-shaped domain  
 - Domain decomposition:
   - Left subdomain → solved using PINN  
   - Right-bottom subdomain → solved using BEM  
 - Coupling enforced through interface boundary conditions  
 
-👉 This version establishes the core methodology and validates the approach.
+👉 This version validates the methodology presented in the paper.
 
 </td>
 
@@ -41,7 +66,7 @@ This repository implements, reproduces, and extends the methodology described in
 
 <img src="https://github.com/user-attachments/assets/0f59587c-7119-4b7e-a790-7432307fa024" width="100%"/>
 
-<sub>BEM-PINN coupling on L-shaped domain</sub>
+<sub>BEM–PINN coupling on L-shaped domain</sub>
 
 </td>
 </tr>
@@ -53,9 +78,9 @@ This repository implements, reproduces, and extends the methodology described in
 
 - Extension to non-homogeneous / multi-material domains  
 - Incorporates interface conditions between different materials  
-- Improved physical realism and modeling capability  
+- Improved physical modeling capabilities  
 
-🚧 This version is currently under development and will be released soon.
+🚧 Currently under development.
 
 </td>
 
@@ -70,12 +95,16 @@ This repository implements, reproduces, and extends the methodology described in
 
 </table>
 
+---
+
 ## 🛠 Requirements
 
 - MATLAB  
 - Deep Learning Toolbox  
 - Optimization Toolbox  
 - Parallel Computing Toolbox  
+
+---
 
 ## 📊 Output
 
@@ -86,22 +115,24 @@ Each version produces:
 - BEM reconstruction  
 - Combined contour visualization  
 
-## 📄 Related Paper
+---
 
-The scientific foundations of this work are presented in:
+## 📄 Paper Reference
+
+The scientific foundation of this repository is described in:
 
 > **Barmada, S., Dodge, S., Tucci, M., Formisano, A., Di Barba, P., & Mognaschi, M. E.**  
 > *“A Novel Hybrid Boundary Element—Physics Informed Neural Network Method for Numerical Solutions in Electromagnetics.”*  
-> IEEE Access, 2024, [10.1109/ACCESS.2024.3500039](https://ieeexplore.ieee.org/document/10755077).  
-> [Read the article](https://ieeexplore.ieee.org/document/10755077)
+> IEEE Access, 2024  
+> https://ieeexplore.ieee.org/document/10755077  
 
-📌 This repository implements, reproduces, and extends the methodology described in the above peer-reviewed publication. If you use this code, dataset, or results in your research, please cite the original article.
+📌 This repository is the official codebase accompanying the above publication.
+
+---
 
 ## 📚 Citation
 
 If you use this work, please cite:
-
-🔗 Paper link: https://ieeexplore.ieee.org/document/10755077
 
 ```bibtex
 @article{barmada2024hybrid,
